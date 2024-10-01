@@ -13,14 +13,15 @@ class Package {
     bool m_insured;
 
   public:
-    // Constructor with correct parameter types
+    // Constructors
     Package(const std::string& source, const std::string& destination, float price, float weight, bool insured);
-    Package(const std::string& source, const std::string& destination); // : Package(source, destination, 0.0, 0.0, false) {}
-    Package(const std::string& source, const std::string& destination, float weight); // : Package(source, destination, 0.0, weight, false) {}
+    Package(const std::string& source, const std::string& destination);
+    Package(const std::string& source, const std::string& destination, float weight);
 
-    // Destructor should not take parameters
+    // Destructor
     ~Package();
 
+    // Methods
     void setPrice(float value);
     float getPrice();
 

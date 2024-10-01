@@ -1,6 +1,5 @@
 #include<iostream>
 #include "Package/package.hpp"
-#include "Package/package.cpp"
 
 int main() {
   Package* package1 = new Package("test1", "test2");
